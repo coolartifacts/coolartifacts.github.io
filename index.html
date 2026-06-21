@@ -45,6 +45,14 @@
       font-weight: 600;
     }
     a.btn:hover { opacity: 0.9; }
+    a.more {
+      display: inline-block;
+      margin-left: 16px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.more:hover { text-decoration: underline; }
     footer {
       text-align: center;
       color: var(--muted);
@@ -58,7 +66,7 @@
   <div class="wrap">
     <header>
       <img class="logo" src="/logo.png" alt="Cool Artifacts">
-      <p class="tagline">An AI startup crafting customer centered products.</p>
+      <p class="tagline">An AI startup crafting the coolest products.</p>
     </header>
 
     <main>
@@ -72,13 +80,15 @@
         <a class="btn" href="https://play.google.com/store/apps/details?id=io.coolartifacts.movemouse">
           View on Google Play
         </a>
+        <a class="more" href="/movemouse/">Visit the MoveMouse page &rarr;</a>
       </section>
 
       <section class="card">
         <h2>About us</h2>
         <p>
-          Cool Artifacts SAS is an AI startup based in Viroflay, France. We craft
-          innovative, carefully made products. MoveMouse is just the beginning.
+          Cool Artifacts SAS is an AI startup based in Viroflay, France. Our mission
+          is to build innovative products designed around real user needs — and
+          MoveMouse is the first step on that journey.
         </p>
       </section>
     </main>
@@ -87,7 +97,7 @@
       <p>
         &copy; <span id="year"></span> Cool Artifacts SAS &middot;
         <a href="/mentions-legales.html">Mentions légales</a> &middot;
-        <a href="/movemouse-legal/">Privacy Policy</a>
+        <a href="/movemouse/privacy-policy.html">Privacy Policy</a>
       </p>
     </footer>
   </div>
