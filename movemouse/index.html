@@ -3,7 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MoveMouse – Bluetooth Mouse &amp; Keyboard Remote</title>
+
+  <title>MoveMouse – Bluetooth Mouse, Keyboard &amp; Mouse Jiggler App for PC</title>
+  <meta name="description" content="MoveMouse turns your Android phone into a wireless Bluetooth mouse, keyboard and mouse jiggler for any PC, Mac or smart TV. No dongle, no drivers — just pair and control. Free on Google Play." />
+  <meta name="keywords" content="bluetooth mouse app, mouse jiggler, mouse mover, phone as mouse, android bluetooth keyboard, wireless mouse for pc, air mouse, keep pc awake, remote mouse" />
+  <link rel="canonical" href="https://coolartifacts.io/movemouse/" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/logo.png" type="image/png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cool Artifacts" />
+  <meta property="og:title" content="MoveMouse – Bluetooth Mouse, Keyboard &amp; Mouse Jiggler for PC" />
+  <meta property="og:description" content="Turn your Android phone into a wireless Bluetooth mouse, keyboard and mouse jiggler for any PC. No dongle, no drivers. Free on Google Play." />
+  <meta property="og:url" content="https://coolartifacts.io/movemouse/" />
+  <meta property="og:image" content="https://coolartifacts.io/movemouse/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MoveMouse – Bluetooth Mouse, Keyboard &amp; Mouse Jiggler for PC" />
+  <meta name="twitter:description" content="Turn your Android phone into a wireless Bluetooth mouse, keyboard and mouse jiggler for any PC. No dongle, no drivers. Free on Google Play." />
+  <meta name="twitter:image" content="https://coolartifacts.io/movemouse/og-image.jpg" />
+
+  <!-- Structured data: the app -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MoveMouse – Bluetooth Mouse, Keyboard & Mouse Jiggler",
+    "operatingSystem": "Android 10.0 and up",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "MoveMouse turns an Android phone into a wireless Bluetooth mouse, keyboard and mouse jiggler for any PC, Mac, Linux machine or smart TV. It uses the Bluetooth HID profile, so no dongle, server software or drivers are required.",
+    "url": "https://coolartifacts.io/movemouse/",
+    "image": "https://coolartifacts.io/movemouse/og-image.jpg",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=io.coolartifacts.movemouse",
+    "installUrl": "https://play.google.com/store/apps/details?id=io.coolartifacts.movemouse",
+    "softwareVersion": "1.8.1",
+    "author": {
+      "@type": "Organization",
+      "name": "Cool Artifacts SAS",
+      "url": "https://coolartifacts.io"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is MoveMouse a free Bluetooth mouse app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. MoveMouse is free to download and use on Google Play. It is supported by ads, which can be removed with a one-time in-app purchase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a dongle, server software or drivers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. MoveMouse connects over the standard Bluetooth HID profile, so your computer treats the phone like an ordinary Bluetooth mouse and keyboard. You only pair once from your PC's Bluetooth settings — nothing to install on the computer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a mouse jiggler and how does MoveMouse work as one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A mouse jiggler keeps a computer awake by moving the cursor automatically so it never goes idle. MoveMouse includes a built-in jiggler: turn on Random Movement (or tap the home-screen widget) and your phone nudges the PC cursor on a schedule you control, preventing sleep, screensavers and away status."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which devices does MoveMouse work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Any device that supports Bluetooth HID: Windows PCs, Macs, Linux computers, many smart TVs and consoles. Your phone needs Android 10 or later with Bluetooth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use my phone as a Bluetooth keyboard too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. MoveMouse sends real keystrokes over Bluetooth. You can type with the on-screen PC keyboard (23 international layouts), use your phone's native keyboard, or send function keys, media controls and shortcuts like Ctrl+C from the Special Keys screen."
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     * { box-sizing: border-box; }
     body {
@@ -20,63 +120,102 @@
       gap: 24px;
       align-items: center;
     }
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
+    nav a { color: #ccc; text-decoration: none; font-size: 0.9rem; }
     nav a:hover { color: #fff; }
     nav .brand { color: #fff; font-weight: 600; font-size: 1rem; margin-right: auto; }
     .hero {
-      background: #1a1a2e;
+      background: linear-gradient(135deg, #11141b 0%, #1a2235 100%);
       color: #fff;
-      padding: 64px 24px 48px;
+      padding: 72px 24px 56px;
       text-align: center;
     }
-    .hero h1 { font-size: 2.4rem; margin: 0 0 12px; }
-    .hero p { font-size: 1.1rem; color: #aab; margin: 0 auto; max-width: 520px; }
+    .hero h1 { font-size: 2.4rem; margin: 0 0 14px; line-height: 1.25; }
+    .hero p { font-size: 1.15rem; color: #aab2c5; margin: 0 auto; max-width: 580px; }
     .badge {
       display: inline-block;
-      margin-top: 24px;
-      background: #fff;
-      color: #1a1a2e;
-      padding: 10px 28px;
+      margin-top: 28px;
+      background: #5b8cff;
+      color: #fff;
+      padding: 12px 30px;
       border-radius: 24px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 1rem;
       text-decoration: none;
     }
-    .content {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 64px;
+    .badge:hover { opacity: 0.9; }
+    .req-line { margin-top: 18px; font-size: 0.85rem; color: #8089a0; }
+    .content { max-width: 760px; margin: 0 auto; padding: 8px 24px 64px; }
+    h2 { font-size: 1.5rem; color: #111; margin-top: 3rem; }
+    p.lead { font-size: 1.02rem; color: #444; }
+    /* Screenshot gallery */
+    .shots {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding: 28px 0 12px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
     }
-    h2 { font-size: 1.2rem; color: #111; margin-top: 2.5rem; }
+    .shots figure {
+      flex: 0 0 auto;
+      width: 220px;
+      margin: 0;
+      scroll-snap-align: center;
+    }
+    .shots img {
+      width: 220px;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid #e2e2e8;
+      display: block;
+    }
+    .shots figcaption {
+      font-size: 0.82rem;
+      color: #666;
+      text-align: center;
+      margin-top: 8px;
+    }
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
-      margin-top: 16px;
+      margin-top: 20px;
     }
-    .feature {
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      padding: 16px;
+    .feature { border: 1px solid #e0e0e0; border-radius: 10px; padding: 18px; }
+    .feature h3 { font-size: 1rem; margin: 0 0 6px; color: #1a1a2e; }
+    .feature p { font-size: 0.9rem; color: #555; margin: 0; }
+    ol.steps { padding-left: 1.2rem; }
+    ol.steps li { margin-bottom: 10px; color: #333; }
+    .faq { margin-top: 16px; }
+    .faq details {
+      border-bottom: 1px solid #eee;
+      padding: 14px 0;
     }
-    .feature h3 { font-size: 0.95rem; margin: 0 0 6px; color: #1a1a2e; }
-    .feature p { font-size: 0.88rem; color: #555; margin: 0; }
-    .meta { font-size: 0.88rem; color: #777; }
+    .faq summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: #1a1a2e;
+      font-size: 1rem;
+    }
+    .faq summary::marker { color: #5b8cff; }
+    .faq p { margin: 10px 0 0; color: #555; font-size: 0.95rem; }
+    .meta { font-size: 0.9rem; color: #777; }
     .meta span { margin-right: 16px; }
-    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2.4rem 0; }
     a { color: #1a73e8; }
+    .cta-row { text-align: center; margin-top: 2.6rem; }
+    .cta-row .badge { background: #5b8cff; margin-top: 0; }
     footer {
       text-align: center;
-      padding: 24px;
+      padding: 28px;
       font-size: 0.85rem;
       color: #999;
       border-top: 1px solid #eee;
     }
     footer a { color: #999; margin: 0 8px; }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.9rem; }
+    }
   </style>
 </head>
 <body>
@@ -88,41 +227,101 @@
     <a href="terms.html">Terms &amp; Conditions</a>
   </nav>
 
-  <div class="hero">
-    <h1>MoveMouse</h1>
-    <p>Turn your Android phone into a wireless Bluetooth mouse and keyboard for your PC.</p>
+  <header class="hero">
+    <h1>MoveMouse — Bluetooth Mouse, Keyboard &amp; Mouse Jiggler for your PC</h1>
+    <p>Turn your Android phone into a wireless Bluetooth mouse, keyboard and mouse jiggler.
+       No dongle, no server software, no drivers — just pair and control.</p>
     <a class="badge" href="https://play.google.com/store/apps/details?id=io.coolartifacts.movemouse">Get it on Google Play</a>
-  </div>
+    <p class="req-line">Free · Android 10+ · Works with Windows, Mac, Linux &amp; smart TVs</p>
+  </header>
 
-  <div class="content">
+  <main class="content">
 
-    <h2>Features</h2>
+    <p class="lead">
+      MoveMouse is a free <strong>Bluetooth mouse app</strong> that lets your phone control any
+      computer wirelessly. Because it speaks the standard Bluetooth HID protocol, your PC sees it
+      as a normal mouse and keyboard — there's nothing to install on the computer. Use the touchpad,
+      tilt your phone as an air mouse, type with a full keyboard, or run the built-in
+      <strong>mouse jiggler</strong> to keep your machine awake.
+    </p>
+
+    <section aria-label="Screenshots">
+      <div class="shots">
+        <figure>
+          <img src="screenshots/touchpad.jpg" width="220" loading="lazy"
+               alt="MoveMouse touchpad screen turning an Android phone into a wireless Bluetooth trackpad with left, middle and right mouse buttons" />
+          <figcaption>Precision touchpad with mouse buttons</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/air-mouse.jpg" width="220" loading="lazy"
+               alt="MoveMouse air mouse mode using the phone's motion sensors to move the PC cursor by tilting the device" />
+          <figcaption>Air mouse — tilt to move the cursor</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/jiggler-widgets.jpg" width="220" loading="lazy"
+               alt="MoveMouse home-screen widgets including a one-tap mouse jiggler that keeps the PC awake with automatic cursor movement" />
+          <figcaption>One-tap mouse jiggler widget</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/keyboard.jpg" width="220" loading="lazy"
+               alt="MoveMouse Bluetooth keyboard letting you type on your PC from your Android phone, with emoji and multiple layouts" />
+          <figcaption>Full Bluetooth keyboard</figcaption>
+        </figure>
+        <figure>
+          <img src="screenshots/connect.jpg" width="220" loading="lazy"
+               alt="MoveMouse connection screen listing paired and nearby Bluetooth devices such as laptops, PCs and smart TVs" />
+          <figcaption>Pair with any Bluetooth device</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <h2>Everything your phone can control</h2>
     <div class="features">
       <div class="feature">
-        <h3>Touchpad</h3>
-        <p>Use your phone screen as a precision trackpad. Single and two-finger gestures for clicks and scrolling.</p>
+        <h3>Wireless touchpad</h3>
+        <p>Use your phone screen as a precision trackpad. Single-tap to click, two-finger gestures for scrolling, and dedicated left, middle and right mouse buttons.</p>
       </div>
       <div class="feature">
-        <h3>Keyboard</h3>
-        <p>Full custom keyboard with 13 international layouts, special keys, and native Android keyboard support.</p>
+        <h3>Air mouse</h3>
+        <p>Point and move the cursor by tilting your phone in the air — great for presentations and couch-to-TV control. Adjustable speed and dead zone.</p>
       </div>
       <div class="feature">
-        <h3>Air Mouse</h3>
-        <p>Tilt your phone to move the cursor. Adjustable sensitivity and dead zone for precise control.</p>
+        <h3>Mouse jiggler</h3>
+        <p>Keep your PC awake with automatic, randomised cursor movement. Prevents sleep, screensavers and idle "away" status. Runs silently in the background or from a widget.</p>
       </div>
       <div class="feature">
-        <h3>Macro Recording</h3>
-        <p>Record and replay sequences of mouse and keyboard actions. Loop playback with configurable timing.</p>
+        <h3>Bluetooth keyboard</h3>
+        <p>Type on your computer from your phone. Custom PC keyboard with 23 international layouts, plus native Android keyboard and emoji support.</p>
       </div>
       <div class="feature">
-        <h3>Random Movement</h3>
-        <p>Keep your PC active with randomised cursor movement. Runs silently in the background.</p>
+        <h3>Special keys &amp; shortcuts</h3>
+        <p>Send function keys, media controls, arrow keys and modifier combos like Ctrl+C, Alt+Tab and Ctrl+Alt+Del.</p>
       </div>
       <div class="feature">
-        <h3>Special Keys</h3>
-        <p>Full access to function keys, media controls, arrows, and modifier combos like Ctrl+C.</p>
+        <h3>Macro recording</h3>
+        <p>Record sequences of mouse and keyboard actions and replay them, with optional looping and configurable timing.</p>
       </div>
     </div>
+
+    <hr>
+
+    <h2>A mouse jiggler built right in</h2>
+    <p>
+      Need to <strong>keep your computer awake</strong> without touching it? MoveMouse doubles as a
+      <strong>mouse jiggler</strong> (also called a mouse mover or mouse wiggler). Switch on
+      <em>Random Movement</em> and your phone gently nudges the PC cursor at an interval you choose,
+      so the screen never locks, the status never flips to idle, and downloads or long-running tasks
+      keep going. Because the movement comes from a real Bluetooth HID device, the computer can't
+      tell it apart from a physical mouse — and you can trigger it instantly from a
+      <strong>home-screen widget</strong>, no app launch needed.
+    </p>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Install MoveMouse</strong> on your Android phone from Google Play.</li>
+      <li><strong>Make your phone discoverable</strong> and pair it from your PC's Bluetooth settings — just like adding any Bluetooth mouse.</li>
+      <li><strong>Start controlling.</strong> Use the touchpad, air mouse, keyboard or jiggler. Your last device is remembered, so it reconnects automatically next time.</li>
+    </ol>
 
     <hr>
 
@@ -130,23 +329,46 @@
     <p class="meta">
       <span>Android 10 or later</span>
       <span>Bluetooth 4.0+</span>
-      <span>PC, Mac, or Linux with Bluetooth HID support</span>
+      <span>A PC, Mac, Linux machine or smart TV with Bluetooth HID support</span>
     </p>
 
     <hr>
 
-    <h2>Version</h2>
-    <p class="meta">
-      <span>v1.5 &nbsp;·&nbsp; Initial release</span>
-    </p>
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Is MoveMouse a free Bluetooth mouse app?</summary>
+        <p>Yes. MoveMouse is free to download and use on Google Play. It's supported by ads, which can be removed with a one-time in-app purchase.</p>
+      </details>
+      <details>
+        <summary>Do I need a dongle, server software or drivers?</summary>
+        <p>No. MoveMouse connects over the standard Bluetooth HID profile, so your computer treats the phone like an ordinary Bluetooth mouse and keyboard. You pair once from your PC's Bluetooth settings — there's nothing to install on the computer.</p>
+      </details>
+      <details>
+        <summary>What is a mouse jiggler, and how does MoveMouse work as one?</summary>
+        <p>A mouse jiggler keeps a computer awake by moving the cursor automatically so it never goes idle. MoveMouse has one built in: turn on Random Movement (or tap the home-screen widget) and your phone nudges the PC cursor on a schedule you control, preventing sleep, screensavers and away status.</p>
+      </details>
+      <details>
+        <summary>Which devices does MoveMouse work with?</summary>
+        <p>Any device that supports Bluetooth HID: Windows PCs, Macs, Linux computers, and many smart TVs and consoles. Your phone needs Android 10 or later with Bluetooth.</p>
+      </details>
+      <details>
+        <summary>Can I use my phone as a Bluetooth keyboard too?</summary>
+        <p>Yes. MoveMouse sends real keystrokes over Bluetooth. Type with the on-screen PC keyboard (23 international layouts), use your phone's native keyboard, or send function keys, media controls and shortcuts like Ctrl+C from the Special Keys screen.</p>
+      </details>
+    </div>
+
+    <div class="cta-row">
+      <a class="badge" href="https://play.google.com/store/apps/details?id=io.coolartifacts.movemouse">Get MoveMouse on Google Play</a>
+    </div>
 
     <hr>
 
-    <h2>Contact &amp; Support</h2>
+    <h2>Contact &amp; support</h2>
     <p>Having trouble connecting? Use the in-app troubleshooting guide or reach us at:<br>
     <a href="mailto:contact@coolartifacts.io">contact@coolartifacts.io</a></p>
 
-  </div>
+  </main>
 
   <footer>
     &copy; 2026 Cool Artifacts &nbsp;·&nbsp;
