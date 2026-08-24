@@ -39,6 +39,7 @@
       --fg: #e8eaed;
       --muted: #9aa0aa;
       --accent: #5b8cff;
+      --live: #46d17f;
     }
     * { box-sizing: border-box; }
     body {
@@ -74,6 +75,8 @@
       border: 1px solid var(--accent);
       border-radius: 999px;
     }
+    /* "Shipping" should not look the same as "In development" at a glance. */
+    .badge.live { color: var(--live); border-color: var(--live); }
     .card p { color: var(--muted); margin: 0 0 16px; }
     a.btn {
       display: inline-block;
@@ -111,12 +114,26 @@
 
     <main>
       <section class="card">
-        <h2>MoveMouse</h2>
+        <h2>Secretary <span class="badge">In development</span></h2>
         <p>
-          We're proud to present MoveMouse, our first released product.
-          It turns your Android phone into a wireless Bluetooth mouse,
-          keyboard and mouse jiggler for your PC — no drivers, no dongle,
-          just pair and control.
+          An AI assistant that understands what is on your screen and can act on
+          it — perception first, then control. Its vision and language models run
+          on the device and at the edge, so the work stays where your data already
+          is.
+        </p>
+        <a class="btn" href="mailto:contact@coolartifacts.io?subject=Secretary">
+          Get in touch
+        </a>
+      </section>
+
+      <section class="card">
+        <h2>MoveMouse <span class="badge live">Shipping</span></h2>
+        <p>
+          The first piece of Secretary to ship on its own. Teaching an assistant to
+          drive a PC meant first solving how a phone talks to one — and that part
+          turned out to be worth releasing by itself. MoveMouse turns your Android
+          phone into a wireless Bluetooth mouse, keyboard and mouse jiggler for any
+          PC — no drivers, no dongle, just pair and control.
         </p>
         <a class="btn" href="https://play.google.com/store/apps/details?id=io.coolartifacts.movemouse">
           View on Google Play
@@ -125,12 +142,13 @@
       </section>
 
       <section class="card">
-        <h2>Generative Film Platform <span class="badge">In development</span></h2>
+        <h2>Trameo <span class="badge">In development</span></h2>
         <p>
-          We're exploring new ways for people to communicate in the age of AI.
-          In the works.
+          A generative-film platform. A group defines a film together, contributes
+          idle device compute to render it, and shares a result that anyone can
+          fork and continue — new ways for people to communicate in the age of AI.
         </p>
-        <a class="btn" href="mailto:contact@coolartifacts.io?subject=Generative%20Film%20Platform">
+        <a class="btn" href="mailto:contact@coolartifacts.io?subject=Trameo">
           Get in touch
         </a>
       </section>
@@ -139,13 +157,17 @@
         <h2>About us</h2>
         <p>
           Cool Artifacts SAS is an AI startup based in Viroflay, France, on a
-          mission to empower people in the age of AI. We build across two lines: an
-          <strong>AI assistant</strong> that perceives and helps operate your
-          devices — MoveMouse, which turns a phone into a wireless controller for
-          your PC, is its first released product, grown out of our research into
-          human-interface devices — and a <strong>generative-film platform</strong>
-          reinventing how people communicate and share ideas — through living,
-          AI-generated audiovisual content.
+          mission to empower people in the age of AI. We build across two lines:
+          <strong>Secretary</strong>, an AI assistant that perceives and helps
+          operate your devices — MoveMouse, which turns a phone into a wireless
+          controller for your PC, is its first spinoff to ship — and
+          <strong>Trameo</strong>, a generative-film platform reinventing how people
+          communicate and share ideas, through living, AI-generated audiovisual
+          content.
+        </p>
+        <p>
+          Both lines are the same engineering problem twice over: running inference
+          on hardware we do not own, under a budget we do not set.
         </p>
       </section>
     </main>
